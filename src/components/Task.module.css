@@ -1,0 +1,85 @@
+.content {
+  width: 100%;
+}
+
+.content li {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+
+  background: var(--gray-500);
+
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.content li section {
+  width: 100%;
+  display: flex;
+}
+
+
+.content input[type=checkbox] {
+  display: none;
+}
+
+.checkboxLabel::before {
+  content: "";
+  display: block;
+  position: absolute;
+  gap: 2rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: var(--gray-500);
+
+  border: 2px solid var(--blue);
+  border-radius: 100%;
+  cursor: pointer;
+} 
+.content section input[type=checkbox]:checked + .checkboxLabel::before {
+  border: 2px solid var(--purple-dark);
+  background: var(--purple-dark);
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.43059 0.342123L4.09865 4.67406L1.61618 2.19159L0.780273 3.0275L4.09865 6.34587L9.26649 1.17803L8.43059 0.342123Z' fill='%23F2F2F2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.checkboxLabel:hover:before {
+  background: var(--gray-500);
+  border: 2px solid var(--blue-dark);
+} 
+.content section input[type=checkbox]:checked + .checkboxLabel:hover:before {
+  border: 2px solid var(--purple);
+  background: var(--purple);
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.43059 0.342123L4.09865 4.67406L1.61618 2.19159L0.780273 3.0275L4.09865 6.34587L9.26649 1.17803L8.43059 0.342123Z' fill='%23F2F2F2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.textContent {
+  color: var(--gray-100);
+  margin-left: 2.1rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.content section input[type=checkbox]:checked + label p {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.content li button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  border-radius: 4px;
+  padding: 0.3125rem;
+}
+.content li button:hover {
+  background: var(--gray-400);
+  color: var(--danger);
+}

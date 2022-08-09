@@ -1,0 +1,99 @@
+.containerInput {
+  width: 100%; 
+  height: 54px;
+
+  margin-top: -3.8rem;
+  margin-bottom: 4rem;
+}
+
+.containerInput form {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 90px;
+  gap: 0.5rem;
+}
+.containerInput form input {
+  width: 100%;
+  background: var(--gray-500);
+  color: var(--gray-300);
+
+  padding-left: 1rem;
+
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+}
+.containerInput form input:focus {
+  color: var(--gray-100);
+  border: 1px solid var(--purple-dark);
+}
+
+.containerInput form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  
+  border: none;
+  border-radius: 8px;
+
+  font-weight: bold;
+  font-size: 0.875rem;
+  transition: 0.2s;
+}
+.containerInput form button:hover {
+  background: var(--blue);
+  cursor: pointer;
+}
+/* Fim do Input */
+
+.container {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.content p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--blue);
+}
+.content p:last-child {
+  color: var(--purple);
+}
+
+.content p span {
+  background-color: var(--gray-400);
+  color: var(--gray-300);
+  font-weight: bold;
+  font-size: 0.75rem;
+
+  padding: 0.125rem 0.5rem 0.0625rem;
+  border-radius: 999px;
+}
+
+.emptyContent {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.emptyContent img {
+  margin: 4rem auto 1rem;
+}
+.emptyContent p {
+  font-weight: bold;
+}
